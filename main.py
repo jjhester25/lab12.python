@@ -30,26 +30,3 @@ def main():
 
 if __name__ == '__main__':
     main()
-
-n1 = 10
-n2 = 15
-n3 = 20
-
-n1 < n2 < n3
-
-email = input('Enter your string ')
-
-flag = True
-if not email[0].isalpha():
-    flag = False
-lenemail = len(email)
-if lenemail <= 5 or lenemail >= 30:
-    flag = False
-if email.find('@') == -1:
-    flag = False
-else:
-    atidx = email.find('@')
-if email[atidx+1:].find('.') == -1:
-    flag = False
-
-print (flag)
